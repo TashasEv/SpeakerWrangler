@@ -16,19 +16,16 @@ namespace SpeakerWrangler.Models
 
 		public DbSet<Speaker> Speakers { get; set; }
 
-	}
+        public DbSet<Event> Events { get; set; }
+
+        public DbSet<Session> Sessions { get; set; }
+
+        public DbSet<Submission> Submissions { get; set; }
 
 
-	public class Speaker
-	{
-
-		public int ID { get; set; }
-
-		public string Name { get; set; }
-
-		public string Email { get; set; }
+    }
 
 
-	}
+
 
 }
